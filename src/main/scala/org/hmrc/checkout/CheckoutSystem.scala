@@ -1,8 +1,9 @@
 package org.hmrc.checkout
 
-/**
-  * Created by AnsaloniL on 12/04/2016.
-  */
-class CheckoutSystem {
+import org.hmrc.checkout.model.Fruit
+
+object CheckoutSystem {
+
+  def basketAmount(basket: List[Fruit]): Double = basket.foldLeft(0.0)((acc, fruit) => acc + fruit.price)
 
 }
