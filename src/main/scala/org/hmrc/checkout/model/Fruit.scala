@@ -1,8 +1,5 @@
 package org.hmrc.checkout.model
 
-/**
-  * Created by AnsaloniL on 12/04/2016.
-  */
 sealed trait Fruit {
   def price: Double
 }
